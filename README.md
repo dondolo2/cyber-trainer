@@ -1,9 +1,6 @@
 # Cyber Trainer
 
-A study app for the **Cybersecurity elective** of the WeThinkCode_ Diploma in Software Engineering.
-It teaches the theory of each day's lesson and then tests you with a lot of questions, so you
-can see the gaps in your knowledge before you move on. It is built to get you ready to explain
-secure software development confidently in a job interview.
+A local study app for Cybersecurity in Software Engineering. It teaches the theory of secure software development and then tests your knowledge with a robust question bank, so you can see gaps in your understanding before moving on. It is built to help you explain secure coding practices confidently in a job interview.
 
 It runs entirely on your own computer. There is no account, no database and no internet
 connection needed once it is installed.
@@ -130,6 +127,7 @@ computer, then start the app. The progress loads automatically.
 - `data/progress.json` is personal. Do not commit it to a public repository.
 
 ## Sharing this project with someone else
+**Important note on content**: While the codebase of this project is shared openly, the specific lesson content and questions in the src/content/ folder may be based on proprietary educational materials. If you are publishing this repository publicly, ensure you have the rights to share the study materials. The app is designed so you can easily swap out the content files for your own notes.
 
 Before you zip or push the project:
 
@@ -142,8 +140,7 @@ Before you zip or push the project:
 2. **Leave out `node_modules/` and `dist/`.** They are large and are recreated by `npm install`.
 3. Tell them to follow [Quick start](#quick-start). They start with a clean slate and their own progress.
 
-The course material in this app is based on the WeThinkCode_ curriculum. Check with WeThinkCode_
-whether you are allowed to share it outside your cohort before you publish it anywhere public.
+
 
 ## Adding a new day
 
@@ -281,12 +278,7 @@ Check your internet connection, delete the `node_modules` folder and `package-lo
 
 ## Notes on the content
 
-- This is a **study aid**, not an official source. It follows the course material, and it adds
-  **"Beyond the course"** notes where facts have changed or a point needs care (for example the OWASP Top 10:2025,
-  CVE terminology, and the September 2025 npm supply chain attacks).
-- Some course lessons show code and configuration as images. Where the original snippet was not available,
-  the lesson contains a representative example written for this app, and says so. Compare it with the one in
-  your course repository.
-- Tool commands and flags change between versions. Check the official documentation of a tool before you rely
-  on a command in real work.
-- If you find a mistake, fix it in the matching `src/content/dayN.js` file. The format above is all you need.
+- This is a personal study aid and not an official source. It covers standard cybersecurity principles and adds "Beyond the basics" notes where facts have changed or a point needs care (for example the OWASP Top 10:2025, CVE terminology, and the September 2025 npm supply chain attacks).
+- Some concepts are easier explained with representative code examples. Where a specific configuration or snippet was not available, the lesson contains a representative example written for this app to illustrate the concept clearly.
+- Tool commands and flags change between versions. Check the official documentation of a tool before you rely on a command in real work.
+- If you find a mistake, fix it in the matching src/content/dayN.js file. The format above is all you need.
